@@ -7,7 +7,7 @@ provider "aws" {
 data "terraform_remote_state" "bastion" {
     backend = "s3"
     config = {
-        bucket = "kimura.remote-state"
+        bucket = var.remote_state_bucket
         region = "ap-northeast-1"
         key = "terraform.tfstate"
     }
