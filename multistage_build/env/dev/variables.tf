@@ -3,3 +3,4 @@ variable "aws_secret_key" {}
 variable "region" {
     default = "ap-northeast-1"
 }
+variable "remote_state_bucket" {}
